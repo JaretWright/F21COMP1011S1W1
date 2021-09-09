@@ -81,4 +81,10 @@ public class Camera {
     public void setMirrorless(boolean mirrorless) {
         this.mirrorless = mirrorless;
     }
+
+    public String toString()
+    {
+//        return make + " " + model + " $" + price;
+        return String.format("%s %s $%.2f",make, model, price);
+    }
 }
